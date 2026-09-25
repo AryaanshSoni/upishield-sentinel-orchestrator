@@ -63,6 +63,21 @@ function Index() {
             Intervene before it’s too late.
           </h1>
 
+          <div className="relative -mx-6 mt-7 h-[320px] overflow-hidden lg:hidden">
+            <img
+              src={sentinelImage}
+              alt="UPIShield Sentinel monitoring a traced UPI financial intelligence network"
+              width={1600}
+              height={1200}
+              className="h-full w-full object-cover object-[68%_center]"
+            />
+            <div className="absolute inset-0 mobile-sentinel-mask" />
+            <div className="absolute bottom-5 right-6 border-r border-risk/60 pr-3 text-right">
+              <p className="font-mono text-[8px] uppercase text-muted-foreground">Predicted cash-out</p>
+              <p className="mt-1 font-mono text-[10px] font-semibold text-risk">03 LOCATIONS</p>
+            </div>
+          </div>
+
           <p className="mt-7 max-w-[550px] text-base leading-7 text-muted-foreground sm:text-lg">
             UPIShield transforms live transaction signals into actionable intelligence—giving agencies and institutions the lead time to stop financial crime.
           </p>
@@ -93,7 +108,7 @@ function Index() {
           </div>
         </div>
 
-        <div id="intelligence" className="relative z-10 min-h-[570px] self-stretch lg:min-h-[720px]">
+        <div id="intelligence" className="relative z-10 hidden min-h-[570px] self-stretch lg:block lg:min-h-[720px]">
           <div className="absolute inset-y-0 -left-[24%] -right-[14%] overflow-hidden lg:-left-[22%]">
             <img
               src={sentinelImage}

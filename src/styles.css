@@ -168,6 +168,7 @@
 .brand-shield { clip-path: polygon(50% 0, 91% 17%, 84% 74%, 50% 100%, 16% 74%, 9% 17%); }
 .signal-dot { width: 7px; height: 7px; border-radius: 999px; background: var(--primary); box-shadow: 0 0 16px var(--primary); animation: signal-pulse 2.4s ease-in-out infinite; }
 .sentinel-mask { background: linear-gradient(90deg, var(--background) 0%, color-mix(in oklab, var(--background) 94%, transparent) 13%, color-mix(in oklab, var(--background) 38%, transparent) 40%, transparent 67%), linear-gradient(0deg, var(--background) 0%, transparent 24%); }
+.mobile-sentinel-mask { background: linear-gradient(180deg, var(--background) 0%, transparent 20%, transparent 75%, var(--background) 100%), linear-gradient(90deg, color-mix(in oklab, var(--background) 70%, transparent), transparent 65%); }
 .flow-node { display: block; width: 8px; height: 8px; flex: none; border: 1px solid var(--cyan); background: var(--background); transform: rotate(45deg); }
 .flow-node-active { width: 12px; height: 12px; border-color: var(--primary); background: var(--primary); box-shadow: 0 0 18px color-mix(in oklab, var(--primary) 70%, transparent); }
 .flow-line { position: relative; height: 1px; flex: 1; overflow: hidden; background: color-mix(in oklab, var(--cyan) 34%, transparent); }
