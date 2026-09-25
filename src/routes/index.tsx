@@ -32,7 +32,7 @@ const steps = ["Detect", "Trace", "Predict", "Alert", "Intervene"];
 
 function Index() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-background text-foreground">
+    <main className="relative flex min-h-screen flex-col justify-between overflow-hidden bg-background text-foreground">
       <header className="relative z-20 mx-auto flex h-20 max-w-[1440px] items-center justify-between px-6 lg:px-12">
         <a href="/" className="flex items-center gap-3" aria-label="UPIShield home">
           <img src={shield} alt="" width={36} height={36} className="size-9" />
@@ -111,14 +111,14 @@ function Index() {
 
           <figure className="float-b absolute left-[2%] top-[8%] w-[22%]">
             <img src={coin} alt="UPI transaction" width={816} height={816} loading="lazy" />
-            <figcaption className="-mt-2 text-center font-mono text-[10px] tracking-[0.14em] text-muted-foreground">
+            <figcaption className="-mt-2 whitespace-nowrap text-center font-mono text-[10px] tracking-[0.14em] text-muted-foreground">
               ₹48,200 · FLAGGED
             </figcaption>
           </figure>
 
           <figure className="float-c absolute right-[2%] top-[4%] w-[17%]">
             <img src={pin} alt="Predicted cash-out hotspot" width={816} height={816} loading="lazy" />
-            <figcaption className="-mt-2 text-center font-mono text-[10px] tracking-[0.14em] text-risk">
+            <figcaption className="-mt-2 whitespace-nowrap text-center font-mono text-[10px] tracking-[0.14em] text-risk">
               HOTSPOT · 87%
             </figcaption>
           </figure>
@@ -136,7 +136,14 @@ function Index() {
         </div>
       </section>
 
-      <div className="h-24 bg-gradient-to-b from-background to-foreground" aria-hidden="true" />
+      <section className="rounded-t-[2.5rem] bg-foreground text-background">
+        <div className="mx-auto flex max-w-[1440px] flex-wrap items-center justify-between gap-4 px-6 py-10 lg:px-12">
+          <p className="font-display text-2xl font-bold tracking-tight">Command Centre ↓</p>
+          <p className="font-mono text-[11px] tracking-[0.14em] opacity-60">
+            LIVE CASES · GIS RISK MAP · CASH-OUT PREDICTION · MULTI-AGENCY ALERTS
+          </p>
+        </div>
+      </section>
     </main>
   );
 }
