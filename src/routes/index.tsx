@@ -32,7 +32,7 @@ const steps = ["Detect", "Trace", "Predict", "Alert", "Intervene"];
 
 function Index() {
   return (
-    <main className="relative flex min-h-screen flex-col justify-between overflow-hidden bg-background text-foreground">
+    <main className="relative min-h-screen overflow-hidden bg-background text-foreground">
       <header className="relative z-20 mx-auto flex h-20 max-w-[1440px] items-center justify-between px-6 lg:px-12">
         <a href="/" className="flex items-center gap-3" aria-label="UPIShield home">
           <img src={shield} alt="" width={36} height={36} className="size-9" />
